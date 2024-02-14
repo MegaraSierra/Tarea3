@@ -20,13 +20,13 @@ const OTP = ({ navigation }) => {
 
   useEffect(() => {
     if (timer === 0) {
-      // Aquí puedes manejar lo que deseas hacer cuando el temporizador llega a cero
+   
     }
   }, [timer]);
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
-      // Reiniciar el temporizador cuando la pantalla obtiene el foco
+      
       restartTimer();
     });
 
@@ -44,7 +44,7 @@ const OTP = ({ navigation }) => {
     } else {
       if (index > 0) {
         inputRefs.current[index - 1].focus();
-        newOtp[index - 1] = ''; // Borra el contenido del campo anterior
+        newOtp[index - 1] = ''; 
       }
     }
 
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   arrowButton: {
-    backgroundColor: '#036635', // Cambiado a verde para el fondo de la flecha
+    backgroundColor: '#036635', 
     padding: 15,
     borderRadius: 50,
     marginTop: 20,
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
   buttonImage: {
     width: 30,
     height: 30,
-    tintColor: 'white', // Cambiar el color de la flecha a blanco
+    tintColor: 'white', 
   },
   hiddenInput: {
     width: 0,
@@ -196,11 +196,11 @@ const styles = StyleSheet.create({
     bottom: 80,
   },
   arrowButton: {
-    backgroundColor: '#036635', // Cambiado a verde para el fondo de la flecha
+    backgroundColor: '#036635', 
     padding: 15,
     borderRadius: 50,
-    marginTop: 100, // Ajusta esta propiedad según tus necesidades, puede ser un número negativo para moverla hacia abajo
-    marginLeft: 250, // Ajusta esta propiedad según tus necesidades, puede ser un número positivo para moverla hacia la izquierda
+    marginTop: 100, 
+    marginLeft: 250, 
   },
 });
 

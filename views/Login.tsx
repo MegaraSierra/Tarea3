@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 5,
     marginTop: 20,
-    zIndex: 1, // Asegura que el botón esté en la capa superior
+    zIndex: 1, 
   },
   linkText: {
     textDecorationLine: 'underline',

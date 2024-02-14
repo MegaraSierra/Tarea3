@@ -23,16 +23,16 @@ const Starbucks = ({ route }) => {
           <Image source={require('../imagenes/MegaraSie.jpg')} style={styles.profileImage} />
         </View>
 
-        {/* Agrega la imagen de coffee */}
+        {}
         <Image source={require('../imagenes/Cofee.png')} style={styles.cofeeImage} />
       </ScrollView>
 
-      {/* Pantalla de abajo */}
+      {}
       <View style={styles.bottomContainer}>
         {/* Agrega la imagen centrada */}
         <Image source={require('../imagenes/Linea.png')} style={[styles.bottomImage, { tintColor: 'gray' }]} />
 
-        {/* Cuadros de Información */}
+        {}
         <View style={styles.infoContainer}>
           <View style={styles.cardBalanceContainer}>
             <Text style={styles.cardBalanceText}>Card Balance</Text>
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
   },
   cofeeImage: {
-    width: '100%',  // Mostrar la imagen completa
+    width: '100%',  
     height: 200,
     borderRadius: 45,
   },
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 50,
     borderTopRightRadius: 50,
     paddingTop: 10,
-    alignItems: 'center',  // Centra la imagen horizontalmente
+    alignItems: 'center',  
   },
   bottomText: {
     fontSize: 18,
@@ -173,8 +173,8 @@ const styles = StyleSheet.create({
   },
   bottomImage: {
     width: '100%',
-    height: 60,  // Ajusta la altura según sea necesario
-    resizeMode: 'contain',  // Ajusta el modo de redimensionamiento según sea necesario
+    height: 60,  
+    resizeMode: 'contain',  
   },
   infoContainer: {
     flexDirection: 'row',
@@ -186,9 +186,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
     borderWidth: 1,
-    borderColor: '#D8A11C',  // Cambiado a color dorado (#D8A11C)
+    borderColor: '#D8A11C',  
     padding: 10,
-    borderRadius: 10,  // Con bordes redondeados
+    borderRadius: 10,  
   },
   amountContainer: {
     flex: 0.8,
@@ -211,10 +211,10 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   smallImage: {
-    width: 115,  // Aumento del ancho
-    height: 80,  // Aumento de la altura
+    width: 115,  
+    height: 80,  
     resizeMode: 'contain',
-    borderRadius: 10,  // Con bordes redondeados
+    borderRadius: 10,  
   },
   circleImagesContainer: {
     flexDirection: 'row',
@@ -225,17 +225,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   circleImage: {
-    width: 80,  // Ajusta el tamaño de la imagen
-    height: 80,  // Ajusta el tamaño de la imagen
-    borderRadius: 40,  // Aumenta el radio
+    width: 80,  
+    height: 80,  
+    borderRadius: 40,  
     overflow: 'hidden',
     resizeMode: 'contain',
   },
   circleLabel: {
     color: 'gray',
-    fontSize: 14,  // Aumenta el tamaño del texto
-    marginTop: 5,  // Espacio entre la imagen y el texto
-    textAlign: 'center',  // Alinea el texto en el centro
+    fontSize: 14,  
+    marginTop: 5,  
+    textAlign: 'center',  
   },
   additionalImagesContainer: {
     flexDirection: 'row',
@@ -243,16 +243,16 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   additionalImage: {
-    width: 110,  // Ajusta el ancho según sea necesario
-    height: 110,  // Ajusta la altura según sea necesario
-    borderRadius: 10,  // Con bordes redondeados
-    resizeMode: 'cover',  // Ajusta el modo de redimensionamiento según sea necesario
+    width: 110,  
+    height: 110,  
+    borderRadius: 10,  
+    resizeMode: 'cover',  
   },
   additionalImagesContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 18,
-    position: 'relative',  // Agrega esta línea
+    position: 'relative',  
   },
   
   overlayRectangle: {
@@ -261,9 +261,9 @@ const styles = StyleSheet.create({
     left: 45,
     right: 45,
     marginTop: 50,
-    height: 80,  // Ajusta la altura según lo necesario
+    height: 80,  
     backgroundColor: '#FFFFFF',
-    opacity: 0.9,  // Puedes ajustar la opacidad según lo necesites
+    opacity: 0.9, 
     borderRadius: 30,
   },
   icon: {

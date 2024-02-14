@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-// Define la función renderAsterisk
+
 const renderAsterisk = (text) => {
   return text.length === 0 ? '*' : '';
 };
@@ -77,7 +77,7 @@ const SmartProfile = ({ navigation }) => {
             placeholderTextColor="gray"
             value={phoneNumber}
             onChangeText={(text) => setPhoneNumber(text)}
-            keyboardType="numeric"  // Agrega esta línea para especificar el teclado numérico
+            keyboardType="numeric"  
           />
           {phoneNumber.length > 0 && (
             <TouchableOpacity onPress={() => setPhoneNumber('')}>
@@ -123,10 +123,10 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: '#036635',
     marginTop: 10,
-    width: '80%',  // Puedes ajustar este valor según tus necesidades
+    width: '80%',  
   },
   input: {
-    flex: 1,  // Esto permite que el TextInput ocupe todo el espacio disponible
+    flex: 1,  
     height: 40,
     color: 'black',
     marginLeft: 10,
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#036635',
     padding: 18,
     borderRadius: 50,
-    marginTop: 50, // Ajusta esta propiedad según tus necesidades, puede ser un número negativo para moverla hacia abajo
+    marginTop: 50, 
     marginLeft: 250,
   },
   buttonImage: {
